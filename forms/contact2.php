@@ -19,9 +19,9 @@ $contact->subject = $_POST['subject'];
 $contact->smtp = array(
   'host' => 'smtp-relay.gmail.com', // Your mail server hostname or IP address
   'port' => '465', // The SMTP port, which is usually 25 for unencrypted connections
-  'username' => 'conan084', // If required, enter your SMTP username
-  'password' => 'buscarsalidas8419@', // If required, enter your SMTP password
-  // 'encryption' => 'tls', // If your server requires encryption, uncomment and specify the type here (e.g., 'tls' or 'ssl')
+  //'username' => 'conan084', // If required, enter your SMTP username
+  //'password' => '', // If required, enter your SMTP password
+  //'encryption' => 'tls', // If your server requires encryption, uncomment and specify the type here (e.g., 'tls' or 'ssl')
 );
 
 $contact->add_message($_POST['name'], 'From');
