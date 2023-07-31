@@ -1,10 +1,3 @@
-/**
-* Template Name: BizPage
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -19,6 +12,23 @@ a {
   color: #18d26e;
   transition: 0.5s;
   text-decoration: none;
+}
+
+/* Estilos para la clase de enlaces personalizados */
+.custom-link {
+  font-family: Arial, sans-serif; /* Cambiar la fuente a tu elección */
+  font-size: 12px; /* Tamaño de fuente a tu elección */
+  /* Otros estilos si los deseas */
+}
+
+.custom-jefe {
+  font-family: Arial, sans-serif; /* Cambiar la fuente a tu elección */
+  font-size: 16px; /* Tamaño de fuente a tu elección */
+  /* Otros estilos si los deseas */
+}
+
+.custom-texto {
+  font-size: 25px;
 }
 
 a:hover,
@@ -71,6 +81,62 @@ element.style {
 .badge-danger {
   color: #fff;
   background-color: #dc3545;
+}
+
+/*--------------------------------------------------------------
+# BOTON MESA DE AYUDA
+---------------------------------------------------------------*/
+/* Estilos para el fondo del pop-up */
+.custom-modal .modal-content {
+  background-color: #f1f1f1; /* Cambia el color de fondo según tus preferencias */
+  border-radius: 10px; /* Ajusta el radio de las esquinas según lo desees */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra si lo deseas */
+}
+
+/* Estilos para el título del pop-up */
+.custom-modal .modal-title {
+  color: #333333; /* Cambia el color del título según tus preferencias */
+  font-size: 20px; /* Ajusta el tamaño de fuente según lo desees */
+  font-weight: bold; /* Ajusta el peso de la fuente según lo desees */
+}
+
+/* Estilos para el contenido del pop-up */
+.custom-modal .modal-body {
+  color: #4400ff; /* Cambia el color del texto del cuerpo según tus preferencias */
+  font-size: 16px; /* Ajusta el tamaño de fuente según lo desees */
+}
+
+/* Estilos para el pie de página del pop-up */
+.custom-modal .modal-footer {
+  background-color: #f1f1f1; /* Cambia el color de fondo del pie de página según tus preferencias */
+}
+
+/* Estilos para el botón de cierre del pop-up */
+.custom-modal .close {
+  font-size: 28px; /* Ajusta el tamaño de fuente del botón de cierre según lo desees */
+  color: #333333; /* Cambia el color del botón de cierre según tus preferencias */
+}
+
+/* Animación de entrada del pop-up */
+.custom-modal.show .modal-dialog {
+  animation: fadeInUp 0.15s;
+}
+
+/* Agrega una animación fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#call-to-action li{
+  font-size: 14px;
+  color: #dee9b7;
 }
 
 /*--------------------------------------------------------------
@@ -1346,6 +1412,7 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
 
 #team .member .social {
   margin-top: 15px;

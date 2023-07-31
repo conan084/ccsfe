@@ -15,13 +15,12 @@ $contact->from_name = $_POST['name'];
 $contact->from_email = $_POST['email'];
 $contact->subject = $_POST['subject'];
 
-// Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
 $contact->smtp = array(
-  'host' => 'smtp-relay.gmail.com', // Your mail server hostname or IP address
-  'port' => '465', // The SMTP port, which is usually 25 for unencrypted connections
-  //'username' => 'conan084', // If required, enter your SMTP username
-  //'password' => '', // If required, enter your SMTP password
-  //'encryption' => 'tls', // If your server requires encryption, uncomment and specify the type here (e.g., 'tls' or 'ssl')
+  'host' => 'mail.sfe.epesf', 
+  'port' => '25', 
+  'username' => 'conan084@epe.santafe.gov.ar',
+  //'password' => '',
+  //'encryption' => 'tls',
 );
 
 $contact->add_message($_POST['name'], 'From');
