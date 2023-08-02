@@ -19,8 +19,8 @@ $contact->smtp = array(
   'host' => 'smtp-relay.gmail.com', 
   'port' => '587', 
   'username' => 'hcossu.epe',
-  //'password' => 'LeNovo840318@',
-  //'encryption' => 'tls',
+  'password' => 'LeNovo840318@',
+  'encryption' => 'tls',
 );
 
 $contact->add_message($_POST['name'], 'From');
