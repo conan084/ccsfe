@@ -18,7 +18,7 @@ $contact->subject = $_POST['subject'];
 $contact->smtp = array(
   'host' => 'mail.sfe.epesf', 
   'port' => '25', 
-  'username' => 'conan084@epe.santafe.gov.ar',
+  'username' => 'conan084',
   //'password' => '',
   //'encryption' => 'tls',
 );
