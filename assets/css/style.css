@@ -111,6 +111,18 @@ element.style {
   background-color: #f1f1f1; /* Cambia el color de fondo del pie de página según tus preferencias */
 }
 
+#header-hcossu {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  background-color: #9e9eeb;
+  justify-content: space-between;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: var(--bs-modal-header-border-width) solid #000;
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+
 /* Estilos para el botón de cierre del pop-up */
 .custom-modal .close {
   font-size: 28px; /* Ajusta el tamaño de fuente del botón de cierre según lo desees */
