@@ -16,10 +16,10 @@ $contact->from_email = $_POST['email'];
 $contact->subject = $_POST['subject'];
 
 $contact->smtp = array(
-  'host' => 'mail.sfe.epesf', 
-  'port' => '25', 
-  'username' => 'conan084',
-  //'password' => '',
+  'host' => 'smtp-relay.gmail.com', 
+  'port' => '587', 
+  'username' => 'hcossu.epe',
+  //'password' => 'LeNovo840318@',
   //'encryption' => 'tls',
 );
 
