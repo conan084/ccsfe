@@ -19,7 +19,7 @@ $contact->smtp = array(
   'host' => 'smtp-relay.gmail.com', 
   'port' => '587', 
   'username' => 'hcossu.epe',
-  'password' => 'LeNovo840318@',
+  'password' => '',
   'encryption' => 'tls',
 );
 
