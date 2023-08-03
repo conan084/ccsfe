@@ -16,11 +16,11 @@ $contact->from_email = $_POST['email'];
 $contact->subject = $_POST['subject'];
 
 $contact->smtp = array(
-  'host' => 'smtp-relay.gmail.com', 
-  'port' => '587', 
-  'username' => 'hcossu.epe',
-  'password' => '',
-  'encryption' => 'tls',
+  'host' => 'mail.sfe.epesf', 
+  'port' => '25', 
+  'username' => 'conan084@epe.santafe.gov.ar',
+  //'password' => '',
+  //'encryption' => 'tls',
 );
 
 $contact->add_message($_POST['name'], 'From');

@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #18d26e;
+  color: #00bb2d;
   transition: 0.5s;
   text-decoration: none;
 }
@@ -80,7 +80,7 @@ element.style {
 
 .badge-danger {
   color: #fff;
-  background-color: #dc3545;
+  background-color: #00bb2d;
 }
 
 /*--------------------------------------------------------------
@@ -111,11 +111,11 @@ element.style {
   background-color: #f1f1f1; /* Cambia el color de fondo del pie de página según tus preferencias */
 }
 
-#header-hcossu {
+#header-nosotros {
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  background-color: #9e9eeb;
+  background-color: #7d94f7;
   justify-content: space-between;
   padding: var(--bs-modal-header-padding);
   border-bottom: var(--bs-modal-header-border-width) solid #000;
