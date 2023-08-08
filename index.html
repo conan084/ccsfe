@@ -14,7 +14,8 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/fuente-google.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -204,6 +205,31 @@
 
   <main id="main">
 
+
+        <!-- =============== BOTON POP REDES WIFI ==============-->
+        <div class="text-center modal fade custom-modal" id="popwifi" tabindex="-1" role="dialog" aria-labelledby="urgenciasModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content text-center">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="urgenciasModalLabel"><b>IMPORTANTE!</b></h5>
+                      <button type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="text-center modal-body">
+                      <p>Recuerde que para conectarse a EPE-INTRANET, debe poseer un equipo entregado por el personal de soporte técnico. 
+                        <br><b>NO ESTÁ PERMITIDO UTILIZAR SU EQUIPO PERSONAL</b></p>                        
+                      <a href="https://glpi.sfe.epesf/marketplace/formcreator/front/formdisplay.php?id=7" target="_blank"><b>Inicie su solicitu AQUÍ</b></a>
+                  </div>
+                  <div class="modal-footer ">
+                      <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Aceptar</button>
+                      <!-- Puedes agregar aquí más botones o acciones si lo deseas -->
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- =============== BOTON POP UP REDES WIFI ==============-->
+
     <!-- ======= Featured Services Section Section ======= -->
     <section id="featured-services">
       <div class="container">
@@ -217,8 +243,13 @@
 
           <div class="col-lg-4 box box-bg">
             <i class="bi bi-card-checklist"></i>
-            <h4 class="title"><a href="https://glpi.sfe.epesf/marketplace/formcreator/front/formdisplay.php?id=6" target="_blank">GLPI</a></h4>
-            <p class="description">Solicite asistencia técnica de manera rápida y eficiente, enviando un ticket en nuestro sistema GLPI</p>
+            
+            <h4 class="title"><a href="#" data-toggle="modal" data-target="#popwifi">WIFI EPE</a>
+              <span class="wifi badge badge-danger wow flash animated" id="nuevo_wifi" data-wow-iteration="infinite" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-iteration-count: infinite; animation-name: flash;">Nuevo</span>
+            </h4>
+            
+            <!-- <h4 class="title"><a data-target="#pophcossu" class="custom-link" target="_blank">WIFI EPE</a></h4> -->
+            <p class="description">Solicite acceso a nuestra RED de WIFI, para manterse conectado desde su equipo de manera inalámbrica.</p>
           </div>
 
           <div class="col-lg-4 box">
@@ -266,7 +297,7 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="about-col">
               <div class="img">
-                <img src="assets/img/nuestro-plan.jpg" alt="" class="img-fluid">
+                <img src="assets/img/nuestro-plan.png" alt="" class="img-fluid">
                 <div class="icon"><i class="bi bi-brightness-high"></i></div>
               </div>
               <h2 class="title"><a href="#">OPERACIONES</a></h2>
@@ -720,45 +751,6 @@
         <span style="cursor: pointer;" class="cta-btn" data-toggle= "modal" data-target="#popmesadeayuda">Contacto</span>
       </div>
     </section>
-    
-    <section id="facts">
-      <!-- <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </header>
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-        <div class="facts-img">
-          <img src="assets/img/facts-img.png" alt="" class="img-fluid">
-        </div>
-
-      </div> -->
-    </section><!-- End Facts Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="section-bg">
@@ -1231,31 +1223,6 @@
           </div>
         </div>
 
-        <!-- <div class="form">
-          <form action="https://github.com/conan084/ccsfe/blob/ac5cc6870075fa14af0a30756ad3ed7608cdb04e/forms/contact2.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre y Apellido" required>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-            </div>
-            <div class="text-center"><button type="submit">Enviar</button></div>
-          </form>
-        </div>
-      </div> -->
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -1299,14 +1266,6 @@
               <strong>Email:</strong> admsistemas@epe.santafe.gov.ar<br>
             </p>
 
-            <!-- <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div> -->
-
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
@@ -1333,6 +1292,38 @@
     </div>
   </footer><!-- End Footer -->
 
+
+    <!-- =============== BOTON POP UP NOSOTROS ==============-->
+    <div class="text-center modal fade custom-modal" id="popingreso" tabindex="-1" role="dialog" aria-labelledby="ingresoModalLabel" aria-hidden="true">
+      <div class="modal-dialog text-center" role="document">
+          <div class="modal-content">
+              <div class="modal-header" id="header-ingreso">
+                  <h5 class="modal-title text-center" id="ingresoModalLabel">NUEVA FUNCION</h5>
+                  <!-- <button type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button> -->
+              </div>
+              <div class="text-center modal-body">
+                  <p>Solicite acceso a nuestra RED de WIFI, 
+                    para manterse conectado desde su equipo de manera inalámbrica. 
+                    <br><br><a href="https://glpi.sfe.epesf/marketplace/formcreator/front/formdisplay.php?id=7" target="_blank"><b>SOLICITE ACCESO AQUÍ</b></a>
+                  </b></p>
+              </div>
+              <!-- <div class="modal-footer ">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Aceptar</button>
+              </div> -->
+          </div>
+      </div>
+    </div>
+    <!-- =============== BOTON POP UP NOSOTROS ==============-->
+
+  <script>
+    window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById('popingreso'));
+        myModal.show();
+    };
+  </script>
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1347,11 +1338,13 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-<!-- Vincula jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Vincula jQuery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-<!-- Vincula Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Vincula Bootstrap JS -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <script src="assets/js/bootstrap.min.js"></script>
 
 </body>
 

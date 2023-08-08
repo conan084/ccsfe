@@ -64,6 +64,30 @@ element.style {
   padding-left: 0;
 }
 
+.wifi {
+  font-size: 8px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+#nuevo_wifi {
+  display: inline-block;
+  padding: 0.35em 0.5em;
+  font-size: 55%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#nuevo_wifi {
+  color: #fff;
+  background-color: #dc3545;
+}
+
 .badge {
   display: inline-block;
   padding: 0.35em 0.5em;
@@ -121,6 +145,24 @@ element.style {
   border-bottom: var(--bs-modal-header-border-width) solid #000;
   border-top-left-radius: var(--bs-modal-inner-border-radius);
   border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+
+#header-ingreso {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  background-color: #ff0000;
+  justify-content: center;
+  padding: var(--bs-modal-header-padding);
+  border-bottom: var(--bs-modal-header-border-width) solid #000;
+  border-top-left-radius: var(--bs-modal-inner-border-radius);
+  border-top-right-radius: var(--bs-modal-inner-border-radius);
+}
+
+#ingresoModalLabel{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight:lighter;
 }
 
 /* Estilos para el botón de cierre del pop-up */
